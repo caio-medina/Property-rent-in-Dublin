@@ -1,0 +1,27 @@
+O desenvolvimento de um site sera o ponto de partida para que a procura por acomodacao seja facilitada,
+o principal objetivo do projeto e com base nas informacoes cadastradas pelo usuario e suas preferencias, o site disponibilizara de uma pagina cadastral para que o usuario preencha com suas informacoes e suas preferencias na busca por uma acomodacao. A proposta do site e agrupar as pessoas com preferencias semelhantes, criando assim grupos aptos a alugar uma casa ou um apartamento em Dublin, e assim o site enviaram um email como resposta informando que a acomodacao foi encontrada. 
+
+
+
+
+A facilidade dos estrangeiros de encontrar emprego legal e se regularizar e um atrativo para a imersao na lingua inglesa e uma experiencia fora do seu pais de origem.
+
+De acordo com o site oficial de estatistica do governo CSO, o aumento da populacao do ano de 2016 para 2022 foi de 361671 pessoas, aprocimadamente 7.06%. Ja o aumento de casa no periodo de 2016 ate 2022 foi de 120945, aproximadamente 5.7%
+
+
+ja no jornal Irish Mirror o Presidente === declarou que a crise imobiliaria na irlanda 
+
+
+a importancia dos estrangeiros na economia irlandeza
+
+
+
+
+.App-header {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

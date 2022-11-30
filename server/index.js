@@ -17,9 +17,18 @@ app.post("/register", (req,res)=>{
     const{name} = req.body;
     const{surname} = req.body;
     const{email} = req.body;
+    const{sex} = req.body;
+    const{location} = req.body;
+    const{price} = req.body;
+    const{radius} = req.body;
+    const{sharedrooms} = req.body;
+    const{beds} = req.body;
+    const{beths} = req.body;
+    
+    //alert(req.body.form);
 
-    let SQL = "INSERT INTO property (name, surname, email) VALUES (?,?,?)";
-    db.query(SQL, [name, surname, email], (err,result) => {
+    let SQL = "INSERT INTO property (name, surname, email, sex, location, price, radius, sharedrooms, beds, beths) VALUES (?,?,?,?,?,?,?,?,?,?)";
+    db.query(SQL, [name, surname, email,sex, location, price, radius, sharedrooms, beds, beths], (err,result) => {
         console.log(err);
     });
 });

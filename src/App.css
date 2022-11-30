@@ -1,14 +1,15 @@
 .app--body{
   
-  font-size: 30px;
+  font-size: 16px;
   border: 3px solid black;
-  background-color:rgb(40, 181, 247);
+  background-color:rgb(45, 181, 207);
   display: block;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .app--header{
-  padding: 0;
-  margin: 0;
-  background-color: aqua;
+  text-align: center;
+  background-color: rgb(50, 181, 257);
+  font-size: 24px;
 
 }
 
@@ -16,11 +17,17 @@
   font-size: 30px;
 
 }
+.app--container{
+   
+  width: 100%;
+  
+
+}
 
 .personal-information--container{
-  background-color: white;
+  background-color: rgb(55, 181, 307);
   position: relative;
-  left: 100px;
+  padding-left: 200px;
 
 }
 .name--container{
@@ -35,27 +42,45 @@
 .sex--container{
   padding: 10px;
 }
-
-.requirements-property--container{
-  background-color: red;
-  position: relative;
-  left: 100px;
+.dublin_img{
+  text-align: right;
 }
 
-.search--container{
+.requirements-property--container{
+  background-color: rgb(60, 181, 357);;
+  position: relative;
+  padding-left: 200px;
+  
+}
+
+.location--container{
   padding: 10px;
+  float:left;
 }
 .price--container{
   padding: 10px;
+  float:left;
 }
 .radius--container{
   padding: 10px;
+  height: 30px;
+}
+
+.sharedrooms--container{
+  display:block;
+  padding: 10px;
+   float:left;
+   text-align:right;
+  
 }
 .beds--container{
   padding: 10px;
+  float:left;
+
 }
 .beths--container{
   padding: 10px;
+  padding-left: 200px;
 
 }
 .type--container{
@@ -68,20 +93,22 @@
 
 
 .button--container {
-  border: 2px solid black;
-  background-color: rgb(60, 187, 77);
+  border: 1px solid black;
+  background-color: rgb(158, 158, 158);
   padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  
 }
 
 .footer--container{
-  background-color: white;  
+  background-color:rgb(65, 181, 407);  
+  height: auto;
 }
 
 
