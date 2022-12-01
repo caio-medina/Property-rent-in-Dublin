@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+const app = express();
 
 const connection = mysql.createPool({
   host     : 'localhost',
@@ -9,7 +10,7 @@ const connection = mysql.createPool({
   database : 'property'
 });
 
-const app = express();
+
 
 app.get('/users', function (req, res) {
     

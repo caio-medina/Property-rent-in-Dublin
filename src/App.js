@@ -8,9 +8,9 @@ function App() {
   
   const handleClickButton = () =>{
     
-    Axios.post("http://localhost:3001/register", {
+    Axios.post("http://localhost:3000/register", {
 
-      
+      //formulario: Formulario.document.getElementById.value,
       name: document.getElementById("name").value,
       surname: document.getElementById("surname").value,
       email: document.getElementById("email").value,
@@ -28,6 +28,7 @@ function App() {
         console.log(response);
     });
   };
+
  
   return (
     <div className="app--container">

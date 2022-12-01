@@ -2,6 +2,9 @@ const express =  require("express");
 const app = express();
 const mysql = require("mysql");
 const cors = require("cors");
+app.use(cors());
+app.use(express.json());
+
 
 const db = mysql.createPool({
     host: "localhost",
@@ -10,8 +13,8 @@ const db = mysql.createPool({
     database:"property.rent",
 });
 
-app.use(cors());
-app.use(express.json());
+
+
 
 app.post("/register", (req,res)=>{
     const{name} = req.body;
@@ -25,15 +28,33 @@ app.post("/register", (req,res)=>{
     const{beds} = req.body;
     const{beths} = req.body;
     
-    //alert(req.body.form);
+    
 
     let SQL = "INSERT INTO property (name, surname, email, sex, location, price, radius, sharedrooms, beds, beths) VALUES (?,?,?,?,?,?,?,?,?,?)";
     db.query(SQL, [name, surname, email,sex, location, price, radius, sharedrooms, beds, beths], (err,result) => {
         console.log(err);
     });
+    
+});
+
+app.get('/users', function (req, res) {
+    
+    db.getConnection(function (err, connection) {
+    
+    connection.query('SELECT * FROM property', function (error, results, fields) {
+      
+      res.send(results)
+    });
+  });
 });
 
 
-app.listen(3001, ()=>{
+
+
+
+//app.get('/', (req, res) => res.json({ message: 'Funcionando!' }));
+
+
+app.listen(3000, ()=>{
     console.log("rodando servidor");
 });
